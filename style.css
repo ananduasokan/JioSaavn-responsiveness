@@ -1,92 +1,15 @@
 * {
-    padding: 0;
     margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-decoration: none;
-    background-color: #edededa6;
+    padding: 0;
 }
 
-nav {
-    /* border: 2px solid black; */
-    height: 60px;
-    display: flex;
-    position: sticky;
-    top: 0px;
-}
-
-.left-box {
-    /* border: 1px solid green; */
-    width: 33%;
-    display: flex;
-
-}
-
-.left-box img {
-    width: 50px;
-    height: 37px;
-}
-
-.left-box h1 {
-    font-size: 30px;
-}
-
-.left-box img,
-h1,
-strong {
-    /* border: 1px solid brown; */
-    margin: 13px 0px 15px 15px
-}
-
-.left-box a {
-    color: black;
-}
-
-.element {
-    margin-top: 19px;
-}
-
-.middle-box {
-    /* border: 1px solid green; */
-    width: 33%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.middle-box input {
-    height: 30px;
-    width: 100%;
-    border-radius: 15px;
-    background-color: white;
-    border: 2px solid rgb(230, 230, 230);
-}
-
-::placeholder {
-    text-align: center;
-}
-
-.right-box {
-    /* border: 1px solid green; */
-    width: 33%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.right-box strong {
-    /* border: 1px solid brown; */
-    margin-right: 20px;
-}
-
-main {
-    /* border: 2px solid black; */
-    display: flex;
-}
+/* LEFT ASIDE */
 
 .left-aside {
     /* border: 2px solid green; */
     width: 17%;
+    height: 80vh;
 }
-
 
 .top-content {
     /* border: 1px solid brown; */
@@ -98,6 +21,10 @@ main {
     color: grey;
 }
 
+.left-aside a {
+    text-decoration: none;
+}
+
 main a {
     color: rgb(54, 53, 53);
 }
@@ -105,6 +32,11 @@ main a {
 main a:hover {
     color: black;
 
+}
+
+main {
+    display: flex;
+    background-color: rgb(241, 237, 237);
 }
 
 .middle-content {
@@ -122,27 +54,42 @@ main a:hover {
     margin: 40px 0 0 80px;
 }
 
-button {
-    padding: 15px;
+.button button {
+    padding: 10px;
     width: 70%;
-    border-radius: 30px;
+    border-radius: 23px;
     color: green;
     border: 2px solid green;
+    margin-top: -5px;
 }
 
 .top-content .middle-content a strong {
     color: grey;
 }
 
+/* //LEFT ASIDE */
+
+
+/* RIGHT ASIDE */
+
 .right-aside {
     /* border: 2px solid blue; */
     width: 83%;
+    margin-top: 30px;
 }
 
-.card {
+.box-2 .card {
     /* border: 2px solid red;  */
-    width: 13%;
-    height: 80%;
+    width: 15%;
+    height: 45%;
+    padding: 10px;
+    line-height: 1.2em;
+}
+
+.box-4 .card {
+    /* border: 2px solid red;  */
+    width: 15%;
+    height: 45%;
     padding: 10px;
     line-height: 1.2em;
 }
@@ -206,6 +153,9 @@ button {
     border-radius: 10px;
 }
 
+/* //RIGHT ASIDE */
+
+
 /* extras */
 .responsive ul {
     display: flex;
@@ -226,7 +176,7 @@ button {
 
 
 
-@media (max-width:1500px) {
+/* @media (max-width:1500px) {
     .toggle-button {
         display: flex;
     }
@@ -267,4 +217,4 @@ button {
     main{
         margin-top: 25%;;
     }
-}
+} */
