@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    background-color: #edededa6;
+}
+
+nav {
+    /* border: 2px solid black; */
+    height: 60px;
+    display: flex;
+    position: sticky;
+    top: 0px;
+}
+
+.left-box {
+    /* border: 1px solid green; */
+    width: 33%;
+    display: flex;
+
+}
+
+.left-box img {
+    width: 50px;
+    height: 37px;
+}
+
+.left-box h1 {
+    font-size: 30px;
+}
+
+.left-box img,
+h1,
+strong {
+    /* border: 1px solid brown; */
+    margin: 13px 0px 15px 15px
+}
+
+.left-box a {
+    color: black;
+}
+
+.element {
+    margin-top: 19px;
+}
+
+.middle-box {
+    /* border: 1px solid green; */
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-box input {
+    height: 30px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: white;
+    border: 2px solid rgb(230, 230, 230);
+}
+
+::placeholder {
+    text-align: center;
+}
+
+.right-box {
+    /* border: 1px solid green; */
+    width: 33%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.right-box strong {
+    /* border: 1px solid brown; */
+    margin-right: 20px;
+}
+
+main {
+    /* border: 2px solid black; */
+    display: flex;
+}
+
+.left-aside {
+    /* border: 2px solid green; */
+    width: 17%;
+}
+
+
+.top-content {
+    /* border: 1px solid brown; */
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    line-height: 2.5em;
+    padding: 30px 0px 0px 30px;
+    color: grey;
+}
+
+main a {
+    color: rgb(54, 53, 53);
+}
+
+main a:hover {
+    color: black;
+
+}
+
+.middle-content {
+    /* border: 1px solid brown; */
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    line-height: 2.5em;
+    padding: 30px 0px 0px 30px;
+    color: grey;
+}
+
+.button {
+    /* border: 1px solid brown; */
+    margin: 40px 0 0 80px;
+}
+
+button {
+    padding: 15px;
+    width: 70%;
+    border-radius: 30px;
+    color: green;
+    border: 2px solid green;
+}
+
+.top-content .middle-content a strong {
+    color: grey;
+}
+
+.right-aside {
+    /* border: 2px solid blue; */
+    width: 83%;
+}
+
+.card {
+    /* border: 2px solid red;  */
+    width: 13%;
+    height: 80%;
+    padding: 10px;
+    line-height: 1.2em;
+}
+
+
+.card:hover {
+    cursor: pointer;
+
+}
+
+.card img {
+    width: 100%;
+    height: 53%;
+    border-radius: 15px;
+}
+
+.card img:hover {
+    opacity: 0.7;
+}
+
+.box-1 {
+    /* border: 1px solid green; */
+}
+
+.box-2 {
+    /* border: 1px solid green; */
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-3 {
+    /* border: 1px solid green; */
+    margin-top: 4%;
+}
+
+.box-4 {
+    /* border: 1px solid green; */
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.toggle-button {
+    /* border: 2px solid brown; */
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 28px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+/* extras */
+.responsive ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.responsive ul li {
+    list-style: none;
+    font-size: 18px;
+    margin-top: 13px;
+
+}
+
+.responsive ul li a {
+    text-decoration: none;
+}
+
+
+
+@media (max-width:1500px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links,
+    .vanish {
+        display: none;
+    }
+
+
+    .responsive {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .responsive ul {
+        flex-direction: column;
+        width: 100%;
+        height: 140px;
+    }
+
+    .responsive ul li {
+        text-align: center;
+    }
+
+    .responsive ul li a {
+        padding: 5px 5px;
+    }
+
+    .extra-size {
+        margin: 25px 0 25px 0
+    }
+
+    .navbar-links.active {
+        display: flex;
+
+    }
+    main{
+        margin-top: 25%;;
+    }
+}
